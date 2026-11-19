@@ -1,5 +1,5 @@
-.catalog-hero {
-    --catalog-hero-image: url('./assets/hero.jpg');
+.catalog-hero::before {
+    background-image: url('./assets/hero.jpg');
 }
 
 .demo-label {
