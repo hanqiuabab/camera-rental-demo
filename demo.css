@@ -1,5 +1,5 @@
 .catalog-hero::before {
-    background-image: url('./assets/hero.jpg');
+    background: url('./assets/hero.jpg') center 52% / cover no-repeat;
 }
 
 .demo-label {
@@ -19,4 +19,8 @@
 .reserve-form .reserve-feedback:empty {
     min-height: 0;
     margin: 0;
+}
+
+@media (max-width: 43rem) {
+    .catalog-hero::before { background-position: 65% 51%; }
 }
