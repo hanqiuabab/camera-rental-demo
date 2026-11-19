@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>费用预览 · 取景 FRAME RENTAL</title>
+    <meta name="description" content="为取景示例器材选择租期，并在浏览器中预览费用。">
+    <link rel="stylesheet" href="./assets/storefront.css">
+    <link rel="stylesheet" href="./demo.css">
+    <script src="./demo.js" defer></script>
+</head>
+<body class="storefront-shell">
+    <a class="visually-hidden-focusable storefront-skip-link" href="#main-content">跳到主要内容</a>
+    <header class="storefront-header">
+        <div class="container storefront-header-inner">
+            <a class="storefront-brand" href="./index.html">
+                <span class="storefront-brand-mark" aria-hidden="true"></span>
+                <span class="storefront-brand-copy"><strong>取景</strong><small>FRAME RENTAL</small></span>
+            </a>
+            <nav class="storefront-nav" aria-label="主导航">
+                <a href="./index.html#equipment">器材列表</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="storefront-main">
+        <div class="container reserve-section">
+            <nav class="storefront-breadcrumb" aria-label="面包屑">
+                <a href="./index.html#equipment">器材列表</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">费用预览</span>
+            </nav>
+            <p class="demo-label">静态展示 · 示例数据</p>
+
+            <div class="reserve-grid" data-demo-quote hidden>
+                <section class="reserve-product" aria-labelledby="reserve-product-title">
+                    <div class="reserve-product-media">
+                        <img alt="" width="960" height="640" data-demo-image decoding="async">
+                    </div>
+                    <div class="reserve-product-info">
+                        <span class="catalog-card-code" data-demo-code></span>
+                        <h1 id="reserve-product-title" data-demo-title></h1>
+                        <div class="catalog-price"><strong data-demo-rate></strong><small> / 天</small></div>
+                    </div>
+                </section>
+
+                <section class="reserve-panel" aria-labelledby="reserve-heading">
+                    <h2 id="reserve-heading">预览租赁费用</h2>
+                    <p class="reserve-date-help" id="reserve-date-help">首尾日期均计入租期，开始和结束为同一天时按 1 天计费。</p>
+                    <div class="reserve-form">
+                        <div class="reserve-date-grid">
+                            <div class="reserve-field">
+                                <label class="form-label" for="start-date">开始日期</label>
+                                <input class="form-control" id="start-date" type="date" aria-describedby="reserve-date-help quote-feedback">
+                            </div>
+                            <div class="reserve-field">
+                                <label class="form-label" for="end-date">结束日期</label>
+                                <input class="form-control" id="end-date" type="date" aria-describedby="reserve-date-help quote-feedback">
+                            </div>
+                        </div>
+
+                        <dl class="reserve-quote" aria-live="polite" aria-atomic="true">
+                            <div class="reserve-quote-row">
+                                <dt>日租金</dt>
+                                <dd data-demo-unit></dd>
+                            </div>
+                            <div class="reserve-quote-row">
+                                <dt>租期</dt>
+                                <dd data-demo-days>—</dd>
+                            </div>
+                            <div class="reserve-quote-row">
+                                <dt>合计</dt>
+                                <dd data-demo-total>—</dd>
+                            </div>
+                        </dl>
+                        <p class="reserve-feedback" id="quote-feedback" role="status" aria-live="polite"></p>
+                    </div>
+                </section>
+            </div>
+
+            <section class="checkout-panel" data-demo-missing hidden>
+                <h1>未找到该示例器材</h1>
+                <p><a href="./index.html#equipment">返回器材列表</a></p>
+            </section>
+            <noscript>
+                <section class="checkout-panel">
+                    <h1>费用预览</h1>
+                    <p>启用 JavaScript 后可以按日期计算示例费用。</p>
+                    <p><a href="./index.html#equipment">返回器材列表</a></p>
+                </section>
+            </noscript>
+        </div>
+    </main>
+
+    <footer class="storefront-footer">
+        <div class="container storefront-footer-inner"><span>取景 FRAME RENTAL</span></div>
+    </footer>
+</body>
+</html>

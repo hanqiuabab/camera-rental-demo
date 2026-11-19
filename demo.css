@@ -1,0 +1,22 @@
+.catalog-hero {
+    --catalog-hero-image: url('./assets/hero.jpg');
+}
+
+.demo-label {
+    margin: 0 0 1rem;
+    color: var(--shop-accent-dark);
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .035em;
+}
+
+.catalog-hero .demo-label {
+    margin-bottom: .8rem;
+    color: var(--shop-accent-bright);
+    font-size: .87rem;
+}
+
+.reserve-form .reserve-feedback:empty {
+    min-height: 0;
+    margin: 0;
+}
